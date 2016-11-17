@@ -32,16 +32,12 @@ Auth::routes();
 Route::resource('caixa','CaixaController');
 
 
-// Route::resource('caixa','CaixaController');
-// Route::get('edit/{id}','CaixaController@edit');
-// //Route::get('destroy/{id}','CaixaController@destroy');
-// Route::get('destroy/{id}','CaixaController@destroy');
-// Route::get('update','CaixaController@update');
+Route::resource('caixa','CaixaController');
+Route::get('edit/{id}','CaixaController@edit');
+//Route::get('destroy/{id}','CaixaController@destroy');
+Route::get('destroy/{id}','CaixaController@destroy');
+Route::get('update','CaixaController@update');
 
-
-Route::get('/home', 'HomeController@index');
-Route::resource('registar','RegisterController');
-Route::resource('login','LoginController');
 
 
 // Route::group(['middleware' => ['web']], function () {
